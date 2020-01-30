@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'apps.index',
+    # 'apps.signSet',
 ]
 
 MIDDLEWARE = [
@@ -121,5 +122,10 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
-
 STATIC_URL = '/static/'
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'front-end-Web', 'static'),
+]
+
+# 静态资源文件上线路径
+# STATIC_ROOT='/var/www/zzuliACGN/static/'
