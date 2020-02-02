@@ -21,7 +21,7 @@ app_name = 'users'
 urlpatterns = [
     # path('admin/', admin.site.urls),
     # path(r'^index/', views.index),
-    path(r'^login/', views.login.as_view()),
-    path(r'^register/', views.register.as_view()),
+    path(r'login/', views.login.as_view()),
+    path(r'register/', views.register.as_view()),
     # path(r'^logout/', views.logout),
 ]

@@ -11,10 +11,10 @@ class User(models.Model):
         ('wechat', "微信"),
     )
 
-    name = models.CharField(max_length=128,unique=True)
-    password = models.CharField(max_length=256)
+    name = models.CharField(max_length=128, unique=True)
+    password = models.CharField(max_length=128)
     email = models.EmailField(unique=True)
-    contect = models.CharField(unique=True)
+    contect = models.CharField(unique=True,max_length=128)
     c_time = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):

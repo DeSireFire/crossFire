@@ -19,5 +19,7 @@ from django.urls import re_path
 from apps.index import views
 app_name = 'index'
 urlpatterns = [
-    path('', views.index.as_view()),
+    # path('', views.index.as_view()),
+    re_path(r'.*?', views.index.as_view()),
+    # path('auth/login', views.index.as_view()),
 ]
